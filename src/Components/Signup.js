@@ -24,7 +24,9 @@ export default function Signup() {
       alert("Signin sucessfull")}
      else {
      setErrors(errors);
+     alert(errors);
    }
+  
       
   };
 
