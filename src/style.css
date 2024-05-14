@@ -5,8 +5,8 @@
 body {
   background-image: linear-gradient(
     to right,
-    rgb(88, 148, 199),
-    rgb(49, 193, 232)
+    #b3ecec,
+    #66b2b2
   );
   min-width: 450px;
   height: 60vh;
@@ -75,15 +75,14 @@ body {
   font-weight: 600;
 }
 .navbar ul {
+  font-size: 18px;
   display: flex;
   list-style: none;
-  padding: 20px;
- 
+  padding:27px 20px;
 }
 .navbar ul li {
   padding: 0px 20px;
-  color: white;
- 
+  color:#006666;
 }
 .navbarright button {
   border-radius: 5px;
@@ -93,14 +92,44 @@ body {
   padding: 10px;
   margin: 20px;
 }
-.navbarleft .links{
+.navbarright i{
+  font-size: 20px;
+  color: #055274;
+}
+.navbarleft .links {
   text-decoration: none;
 }
 
 /* content */
 .cover {
+  position: relative;
   display: grid;
   grid-template-columns: auto auto auto;
+}
+.shape button{
+  display: none;
+}
+.shape:hover img{
+  opacity: 0.8;
+}
+.shape:hover button {
+  display: block;
+  position: absolute;
+  margin: 180px;
+  border: none;
+  background-color: 	#66b2b2;
+  font:19px bold;
+  color: white;
+  border-radius: 5px;
+  padding: 14px;
+} */
+.shape:hover
+ button{
+  position: absolute;
+  margin: 180px;
+  border: none;
+  padding: 10px;
+  
 }
 .shape {
   padding-top: 80px;
@@ -114,57 +143,52 @@ body {
 .shape img {
   width: 300px;
   height: 60vh;
-  box-shadow: 10px 10px 10px;
+  box-shadow: 10px 10px 10px #006666;
 }
-.shape1{
+.shape1 {
   padding-top: 15px;
   text-align: center;
   letter-spacing: 2px;
 }
-.shape1 h2{
+.shape1 h2 {
   font: bold;
 }
 
 h1 {
   padding-top: 50px;
   text-align: center;
-  color: rgb(88, 55, 55);
-  text-decoration:underline;
+  color:	006666;
+ text-shadow: 5px 5px 5px  #006666;
 }
-
-
-
 
 /* About */
-.aboutcontent{
+.aboutcontent {
   padding-top: 30px;
 }
-.aboutcontent p{
-
-margin: 10px 50px;
-padding: 10px;
-letter-spacing: 1px;
-
+.aboutcontent p {
+  margin: 10px 50px;
+  padding: 10px;
+  letter-spacing: 1px;
 }
 /* cards */
-.supporters{
+.supporters {
   display: flex;
   justify-content: space-between;
-  padding:20px 65px;
+  padding: 20px 65px;
   margin-top: 40px;
 }
-.card{
+.card {
   width: 350px;
   height: 50vh;
 }
-.card img{
+.card img {
   height: 35vh;
 }
-.card-text{
+
+.card-text {
   font-weight: 400;
   text-align: center;
 }
-
 
 @media only screen and (max-width: 1500px) {
   .containers {

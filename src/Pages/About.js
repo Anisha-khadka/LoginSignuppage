@@ -30,11 +30,14 @@ export default function About() {
         <div className="supporters">
           {Leader.map((a) => (
             <div className="card">
-              <img src={a.img}className="card-img-top" alt="..." />
+              <img src={a.img} className="card-img-top" alt="..." />
+              
               <div className="card-body">
                 <p className="card-text">
-                  {a.name}<br/>
-                  <strong>{a.post}</strong><br/>
+                  {a.name}
+                  <br />
+                  <strong>{a.post}</strong>
+                  <br />
                   {a.des}
                 </p>
               </div>

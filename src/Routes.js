@@ -7,6 +7,7 @@ import Main from './Components/Main'
 
 import About from './Pages/About'
 import Contact from './Pages/Contact'
+import Cart from './Components/Cart'
 
 export default function Routes() {
   return (
@@ -17,6 +18,9 @@ export default function Routes() {
   
     <Route path="/about" component={About} exact/>
     <Route path="/contact" component={Contact} exact/>
+    <Route path="/cart" component={Cart} exact/>
+
+
 
 
     </>
